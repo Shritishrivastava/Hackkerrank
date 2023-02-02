@@ -1,0 +1,19 @@
+//function
+p->next = head;
+
+news->data = data;
+news->next = NULL;
+if(!head)
+{
+head = news;
+}
+else {
+while(p->next!=NULL)
+{
+p = p->next;
+}
+p->next = news; 
+
+}
+return head;
+}
