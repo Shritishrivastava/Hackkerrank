@@ -1,0 +1,13 @@
+bool has_cycle(SinglyLinkedListNode* head) {
+SinglyLinkedListNode* temp1=head;
+SinglyLinkedListNode* temp2=head;
+
+while(temp1 !=NULL && temp1->next !=NULL){
+    temp1=temp1->next->next;
+    temp2=temp2->next;
+    if(temp1==temp2){
+    return 1;
+}
+}
+    return 0;
+}
