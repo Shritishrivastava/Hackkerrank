@@ -11,7 +11,8 @@ struct node{
 
 
 
-void printLinkedList(SinglyLinkedListNode* head) {
+void printLinkedList(SinglyLinkedListNode* head) 
+{
 while(head!=NULL)
 {
 cout<<head->data<<endl;
